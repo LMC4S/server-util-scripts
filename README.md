@@ -52,7 +52,6 @@ docker update --restart unless-stopped <container-name>
 Get latest version of miniconda from official website.
 
 ```
-cd ~/Downloads 
 wget "https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh" -O conda.sh
 sh conda.sh
 # Then press ENTER for like 100 times to read the license for no reason 
@@ -65,7 +64,7 @@ conda create --name <env-name>
 conda config --set auto_activate_base false
 
 conda activate <env-name>
-conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 conda install numpy pandas scipy scikit-learn tensorboard matplotlib plotly
 pip install jupyterlab
 
